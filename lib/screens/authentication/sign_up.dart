@@ -173,21 +173,21 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      '. 1 uppercase',
+                      '. 1 Uppercase',
                       style: TextStyle(
                           color: containsUpperCase
                               ? Colors.green
                               : Theme.of(context).colorScheme.onBackground),
                     ),
                     Text(
-                      '. 1 lowercase',
+                      '. 1 Lowercase',
                       style: TextStyle(
                           color: containsLowerCase
                               ? Colors.green
                               : Theme.of(context).colorScheme.onBackground),
                     ),
                     Text(
-                      '. 1 number',
+                      '. 1 Number',
                       style: TextStyle(
                           color: containsNumber
                               ? Colors.green
@@ -199,14 +199,14 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      '. 1 special character',
+                      '. 1 Special character',
                       style: TextStyle(
                           color: containsSpecialChar
                               ? Colors.green
                               : Theme.of(context).colorScheme.onBackground),
                     ),
                     Text(
-                      '. 8 minimum character',
+                      '. 8 Minimum character',
                       style: TextStyle(
                           color: contains8Length
                               ? Colors.green
@@ -281,7 +281,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       ),
                     ),
                   )
-                : const CircularProgressIndicator()
+                : const CircularProgressIndicator(backgroundColor: Colors.black,)
           ],
         ),
       ),
